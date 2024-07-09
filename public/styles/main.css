@@ -1,0 +1,232 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  margin-left: 20px;
+  width: 25%;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  margin: 0.2em;
+}
+
+canvas {
+  max-width: 660px;
+  max-height: 660px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: min-content;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid transparent;
+  /* Hide bottom border */
+  width: 25%;
+  vertical-align: auto;
+}
+
+/* Alternate row background color */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  background-color: #f0f0f0;
+}
+
+.width-trim {
+  width: 90%;
+}
+
+/* Filters */
+.filter-div {
+  margin: 1.2em;
+  padding: 5px 20px 5px;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.filter-div select {
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 1.5rem;
+  border-radius: 5px;
+  width: 25%;
+  height: 2rem;
+}
+
+.analysing-div {
+  display: flex;
+  height: 40em;
+}
+
+/* Analysis Selector */
+.analysis-selector {
+  width: 20%;
+  height: 100%;
+  background-color: #f0f0f0;
+  /* Slight grey background */
+  /* box-sizing: border-box; */
+  /* border: 2px solid #333; */
+  /* border-radius: 5px 0px 0px 5px; */
+  /* 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+.analysis-selector ul,
+.analysis-selector dl {
+  margin: 0;
+  padding: 0;
+}
+
+.analysis-selector-tab {
+  width: 100%;
+  background-color: #f0f0f0;
+  /* Slight grey background */
+  border: none;
+  /* Remove border */
+  padding: 15px 10px 15px 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 1.2em;
+  text-align: left;
+  margin: 5px 0 5px;
+}
+
+.analysis-selector-tab:hover {
+  color: red;
+  padding-left: 30px;
+}
+
+button.selected {
+  color: red;
+  padding-left: 30px;
+  width: 101%;
+  justify-content: left;
+}
+
+/* Analysis Display */
+.analysis-display {
+  width: 80%;
+  height: 100%;
+}
+
+.analysis-display-view {
+  display: none;
+  width: 100%;
+  /* border: 2px solid #333;
+    border-left: none; */
+  border-radius: 0px 7px 7px 0px;
+  padding: 20px;
+  /* display: flex; */
+  /* align-items: center; */
+
+}
+
+
+
+.salary_data {
+  margin-top: 5rem;
+  text-align: center;
+  height: min-content;
+  padding: 30px 10px 30px;
+  width: fit-content;
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+  border-radius: 10px;
+}
+
+.salary-label {
+  font-weight: bold;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.salary {
+  font-size: 3rem;
+  color: #008000;
+  margin: 5px;
+}
+
+.per_year {
+  font-size: 16px;
+  color: #666;
+  font-size: 0.7rem;
+}
+
+
+/* Optional: Center the analysis views */
+.analysis-display {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.analysis-charts {
+  width: 100%;
+  display: None;
+}
+
+.selected {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+
+  .analysis-selector,
+  .analysis-display {
+    /* width: 100%; */
+  }
+
+  .analysis-selector {
+    border-right: none;
+    margin-bottom: 20px;
+  }
+
+  .filter-div {
+    flex-direction: column;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .analysis-display-view {
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 0.2rem;
+    align-items: center;
+  }
+
+  .salary_data {
+    margin: 1rem;
+  }
+}

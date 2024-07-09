@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles\main.css" />
+
+    <script>
+        // Access the 'test' object directly
+        // let choices = <%- JSON.stringify(locals.choices) %>;
+        // let test = <%- JSON.stringify(locals.test) %>;
+    </script>
+
+    <script type="module" src="scripts\index.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+
+    <title>NJIT Career Outcomes</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="width-trim">
+            <img src="images\njit_logo.png" alt="NJIT_logo" />
+            <h1> New Jersey Institute of Technology </h1>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="width-trim">
+            <!-- Filters -->
+            <div class="filter-div">
+                <select name="year" id="year-select"> </select>
+                <select name="school" id="school-select"> </select>
+                <select name="major" id="major-select"> </select>
+            </div>
+
+            <!-- Analysis Display -->
+            <div class="analysing-div">
+                <div class="analysis-selector">
+                    <ul>
+                        <dl>
+                            <button id="first_destination" class="analysis-selector-tab selected">First
+                                Destination</button>
+                        </dl>
+                        <dl>
+                            <button id="top_employers" class="analysis-selector-tab">Top Employers</button>
+                        </dl>
+                        <dl>
+                            <button id="starting_salary" class="analysis-selector-tab">Starting Salary</button>
+                        </dl>
+                        <dl>
+                            <button id="top_universities" class="analysis-selector-tab">Top Universities</button>
+                        </dl>
+                        <dl>
+                            <button id="degree_types" class="analysis-selector-tab">Degree Types</button>
+                        </dl>
+                        <dl>
+                            <button id="fields_of_study" class="analysis-selector-tab">Fields of Study</button>
+                        </dl>
+                    </ul>
+                    <ul>
+                </div>
+
+
+                <div class="analysis-display">
+                    <div id="first_destination_view" class="analysis-display-view selected">
+                        <div class="analysis-charts selected">
+                            <canvas id="first_destination_chart"></canvas>
+                        </div>
+                        <div class="analysis-numbers">
+
+                        </div>
+                    </div>
+
+                    <div id="top_employers_view" class="analysis-display-view">
+                        <table>
+                            <tbody id="top_employer_table"></tbody>
+                        </table>
+                    </div>
+
+                    <div id="starting_salary_view" class="analysis-display-view">
+                        <div class="salary_data">
+                            <span class="salary-label"> Average Salary: </span>
+                            <h1 id="average_salary" class="salary"> </h1>
+                            <span class="per_year"> per year </span>
+                        </div>
+                        <div class="salary_data">
+                            <span class="salary-label"> Median Salary: </span>
+                            <h1 id="median_salary" class="salary"> </h1>
+                            <span class="per_year"> per year </span>
+                        </div>
+                        <div class="salary_data">
+                            <span class="salary-label"> Maximum Salary: </span>
+                            <h1 id="max_salary" class="salary"> </h1>
+                            <span class="per_year"> per year </span>
+                        </div>
+                    </div>
+
+                    <div id="top_universities_view" class="analysis-display-view">
+                        <table>
+                            <tbody id="top_universities_table"></tbody>
+                        </table>
+                    </div>
+                    <div id="degree_types_view" class="analysis-display-view">
+                        <div class="analysis-charts selected">
+                            <canvas id="degree_types_chart"></canvas>
+                        </div>
+                        <div class="analysis-numbers">
+
+                        </div>
+                    </div>
+                    <div id="fields_of_study_view" class="analysis-display-view">
+                        <div class="analysis-charts selected">
+                            <canvas id="fields_of_study_chart"></canvas>
+                        </div>
+                        <div class="analysis-numbers">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

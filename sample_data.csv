@@ -1,0 +1,8 @@
+﻿id,class_of,schoool,major,degree_level,grad_term,outcome,employer,position_country,position_city,position_state,salary,cont_edu,cont_edu_field,cont_edu_degree
+1,2021,College of Science and Liberal Arts,"Science, Technology, and Society",Bachelor,5/18/2021,Continuing Education, ,,,,,,,
+2,2021,College of Science and Liberal Arts,Biology,Bachelor,5/18/2021,Continuing Education, ,USA,New York,NY,,,Health/Medicine,"Medical degree (M.D., DDS, etc.)"
+3,2021,Martin Tuchman School of Management,Business,Bachelor,5/18/2021,Continuing Education,,USA,Providence,RI,,,Computing,Master's
+4,2021,College of Science and Liberal Arts,Biochemistry,Bachelor,5/18/2021,Continuing Education,,USA,New York,NY,,,Health/Medicine,"Medical degree (M.D., DDS, etc.)"
+5,2021,Ying Wu College of Computing,Business and Information Systems,Bachelor,12/31/2020,Continuing Education,PSEG,USA,Newark,NJ,,,Management/Finance/Accounting,Master's
+6,2021,College of Science and Liberal Arts,Biology,Master,5/18/2021,Continuing Education,Scribeamerica,USA,Newark,NJ,,,,
+7,2021,College of Science and Liberal Arts,Forensic Science,Bachelor,5/18/2021,Continuing Education,Publicis Media Internship,,,,,,,
