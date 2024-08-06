@@ -2,7 +2,7 @@
 
 Welcome to the Graduate Student Outcomes Dashboard! This application is designed to showcase the post-graduation outcomes of graduate students, providing valuable insights into employment trends, starting salaries, top employers, higher education pursuits, and more. By using various filters, users can analyze specific trends based on graduation year, school, and major.
 
-![Graduate Student Outcomes Dashboard Screenshot](outcomes_dashboard_ss.png)
+![Graduate Student Outcomes Dashboard Screenshot](njit_student_outcomes_dashboard_ss.png)
 
 ## Key Features
 
